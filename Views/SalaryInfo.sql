@@ -1,4 +1,4 @@
--- view that displays and computes different salary related information like avg salary, FICA and adjusted salary, 
+-- view that displays and computes different salary related information like avg salary, FICA,adjusted salary, and employees age
 CREATE VIEW SalaryInformation27 AS
 SELECT Employee.EmployeeID, LastName, FirstName, MinSalary, MaxSalary, AvgSalary = ((MinSalary+MaxSalary)/2),
 FICA = ((MinSalary+MaxSalary)/2)*0.06, AdjustedSalary = ((MinSalary+MaxSalary)/2)-((MinSalary+MaxSalary)/2)*0.06, 
