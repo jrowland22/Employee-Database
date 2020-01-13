@@ -1,4 +1,4 @@
--- view that displays information about an employees current
+-- view that displays information about an employees current job
 CREATE VIEW CurrentJob27 AS
 SELECT Employee.EmployeeID, FirstName, LastName,JobTitle, DeptName, 
 Department.DeptCode, MinSalary, MaxSalary, StatusDesc, JobStart
